@@ -31,6 +31,11 @@ classDiagram
         +afinar() void
     }
 
+    class Bajo {
+        +tocar() void
+        +afinar() void
+    }
+
     class Banda {
         -instrumentos : ArrayList~Instrumento~
         +Banda()
@@ -51,12 +56,14 @@ classDiagram
     Instrumento <|-- Piano : extends
     Instrumento <|-- Arpa : extends
     Instrumento <|-- Violin : extends
+    Instrumento <|-- Bajo : extends
 
     Banda "1" o-- "0..*" Instrumento : instrumentos
     Banda ..> Guitarra : creates
     Banda ..> Piano : creates
     Banda ..> Arpa : creates
     Banda ..> Violin : creates
+    Banda ..> Bajo : creates
     TestBanda ..> Banda : uses
 ```
 ## Resumen de la estructura 
