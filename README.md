@@ -59,7 +59,7 @@ classDiagram
     Banda ..> Violin : creates
     TestBanda ..> Banda : uses
 ```
-
+## Resumen de la estructura 
 | Clase | Tipo | Descripción |
 |---|---|---|
 | **[Instrumento](cci:2://file:///c:/Users/apdaz/dev/patrones/BandaAleatoria/src/bandaaleatoria/Instrumento.java:11:0-20:1)** | `abstract class` | Clase base abstracta. Define los métodos abstractos [tocar()](cci:1://file:///c:/Users/apdaz/dev/patrones/BandaAleatoria/src/bandaaleatoria/Instrumento.java:16:4-18:5) y [afinar()](cci:1://file:///c:/Users/apdaz/dev/patrones/BandaAleatoria/src/bandaaleatoria/Instrumento.java:14:4-14:34), y un método concreto [tocar(String nota)](cci:1://file:///c:/Users/apdaz/dev/patrones/BandaAleatoria/src/bandaaleatoria/Instrumento.java:16:4-18:5). |
