@@ -46,7 +46,7 @@ public class Banda {
     
     public Instrumento generarInstrumento() {
         Random r = new Random();
-        int n = r.nextInt(4);
+        int n = r.nextInt(5);
         switch(n){
             case 0:
                 return new Guitarra();
@@ -54,6 +54,8 @@ public class Banda {
                 return new Piano();
             case 2:
                 return new Arpa();
+            case 3:
+                return new Bajo();
             default:
                 return new Violin();
         }

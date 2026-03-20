@@ -20,6 +20,7 @@ public class TestBanda {
         Random r = new Random();
         int cantidad = r.nextInt(10);
         System.out.println("Salimos al toque con " + cantidad + " instrumentos");
+        
         Banda banda = new Banda();
         banda.construirBanda(cantidad);
         banda.afinarBanda();
