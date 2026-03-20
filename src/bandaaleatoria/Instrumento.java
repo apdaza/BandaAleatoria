@@ -9,14 +9,10 @@ package bandaaleatoria;
  *
  * @author adazac
  */
-public class Instrumento {
-    public void tocar(){
-        System.out.println("tocando instrumento");
-    }
+public abstract class Instrumento {
+    public abstract void tocar();
     
-    public void afinar(){
-        System.out.println("afinando instrumento");
-    }
+    public abstract void afinar();
     
     public void tocar(String nota){
         System.out.println("tocando " + nota);
